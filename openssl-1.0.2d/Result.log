@@ -1,0 +1,10 @@
+klee -posix-runtime --optimize klee.out.bc -sym-arg 60
+
+------------------------------------------------------------------------
+|  Path   |  Instrs|  Time(s)|  ICov(%)|  BCov(%)|  ICount|  TSolver(%)|
+------------------------------------------------------------------------
+|klee-last|   56913|   121.66|     8.37|     5.09|   13474|       98.54|
+------------------------------------------------------------------------
+KLEE: done: total instructions = 56913
+KLEE: done: completed paths = 325
+KLEE: done: generated tests = 308
